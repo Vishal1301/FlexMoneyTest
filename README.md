@@ -14,15 +14,18 @@ after completion of  all the scenario
 
 
 Important files :
-flexmoney-homepage folder
-This page will have one feature file, one step def file and one page file 
+flexmoney-homepage folder :
+
+This folder  will have one feature file, one step def file and one page file 
 so to add negative scenario we can have multiple page file as well
 
-codecept.conf.js
+codecept.conf.js:
+
 This will have all the important base setup
 like which browser: chrome,firefox etc..
 which driver : Webdriver,Puppeteer,TestCafe and many more supported by Codeceptjs
 
 package.json:
+
 dependencies required will be mentioned here (Just like POM)
 
