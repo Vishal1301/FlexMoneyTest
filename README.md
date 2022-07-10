@@ -4,6 +4,7 @@ Follow below steps(windows)
 1. Clone the project locally
 2. Install Node JS and run npm install
 -- this will install all the required dependencies mentioned in package.json
+**** NODE MODULE(node_mpdule) will be generated might take some time
 3.npx codeceptjs run --plugins allure
 -- this will create a report locally and stored in temp folder or the path can be set as required
 after completion of  all the scenario
