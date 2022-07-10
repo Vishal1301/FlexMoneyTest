@@ -31,3 +31,6 @@ package.json:
 
 dependencies required will be mentioned here (Just like POM)
 
+output folder :
+we can have failed snapshot while execute the test scenarios
+
