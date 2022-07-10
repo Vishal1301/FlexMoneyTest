@@ -1,0 +1,132 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1657461804240' stop='1657461836343'>
+    <name>Flex Money</name>
+    <title>Flex Money</title>
+    <test-cases>
+        <test-case start='1657461814930' status='failed' stop='1657461814939'>
+            <name>Navigate to FlexMoney website</name>
+            <title>Navigate to FlexMoney website</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657461814938' status='failed' stop='1657461814939'>
+                    <name>Given User browse to flex money successfully </name>
+                    <title>Given User browse to flex money successfully </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461814938' status='failed' stop='1657461814939'>
+                            <name>I: login </name>
+                            <title>I: login </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657461814938' status='failed' stop='1657461814939'>
+                                    <name>I am on page </name>
+                                    <title>I am on page </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='3654f131-1225-4c3a-a259-88b10f5a8da3-attachment.png' type='image/png' size='8330'/>
+            </attachments>
+            <failure>
+                <message>Parameter for "url" command needs to be type of string</message>
+                <stack-trace>Error: Parameter for "url" command needs to be type of string
+                    at Browser.url (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\webdriverio\build\commands\browser\url.js:10:15)
+                    at Browser.wrapCommandFn (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\@wdio\utils\build\shim.js:63:38)
+                    at WebDriver.amOnPage (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:901:25)
+                    at Step.run (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\step.js:122:47)
+                    at C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\actor.js:134:23</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1657461815968' status='failed' stop='1657461815973'>
+            <name>Complete the transaction by valid card details and OTP</name>
+            <title>Complete the transaction by valid card details and OTP</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657461815972' status='failed' stop='1657461815973'>
+                    <name>When User adds a mobile number and clicks on Submit button and waits for OTP </name>
+                    <title>When User adds a mobile number and clicks on Submit button and waits for OTP </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461815972' status='failed' stop='1657461815973'>
+                            <name>I: addMobileNumber "9988998899"</name>
+                            <title>I: addMobileNumber "9988998899"</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657461815972' status='failed' stop='1657461815972'>
+                                    <name>I see element </name>
+                                    <title>I see element </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='f0f4713f-df95-404d-9789-c5b532fccb78-attachment.png' type='image/png' size='8330'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'type')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'type')
+                    at WebDriver._isShadowLocator (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:716:20)
+                    at WebDriver._locate (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:781:14)
+                    at WebDriver.seeElement (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:1371:28)
+                    at Step.run (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\step.js:122:47)
+                    at C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\actor.js:134:23</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1657461816116' status='failed' stop='1657461836171'>
+            <name>Verify Successful Transaction Payment Page</name>
+            <title>Verify Successful Transaction Payment Page</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657461816117' status='failed' stop='1657461836171'>
+                    <name>Then User needs to verify PID,AMT,STATUS is as expected in final invoice </name>
+                    <title>Then User needs to verify PID,AMT,STATUS is as expected in final invoice </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461816117' status='failed' stop='1657461836171'>
+                            <name>flexMoney: verifyPaymentPage </name>
+                            <title>flexMoney: verifyPaymentPage </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657461816117' status='passed' stop='1657461821122'>
+                                    <name>I wait 5</name>
+                                    <title>I wait 5</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657461821122' status='failed' stop='1657461836171'>
+                                    <name>I see element "//h3[contains(text(),'PID : 0001234')]"</name>
+                                    <title>I see element "//h3[contains(text(),'PID : 0001234')]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='b3c94d8d-7077-49a2-9c1e-3dad6d9be082-attachment.png' type='image/png' size='8330'/>
+            </attachments>
+            <failure>
+                <message>Element "//h3[contains(text(),'PID : 0001234')]" was not found by text|CSS|XPath</message>
+                <stack-trace>Error: Element "//h3[contains(text(),'PID : 0001234')]" was not found by text|CSS|XPath
+                    at new ElementNotFound (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\errors\ElementNotFound.js:14:11)
+                    at assertElementExists (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:2827:11)
+                    at WebDriver.seeElement (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:1372:5)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

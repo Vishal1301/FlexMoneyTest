@@ -1,0 +1,172 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1657461935985' stop='1657461981149'>
+    <name>Flex Money</name>
+    <title>Flex Money</title>
+    <test-cases>
+        <test-case start='1657461948103' status='passed' stop='1657461960710'>
+            <name>Navigate to FlexMoney website</name>
+            <title>Navigate to FlexMoney website</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657461948115' status='passed' stop='1657461955264'>
+                    <name>Given User browse to flex money successfully </name>
+                    <title>Given User browse to flex money successfully </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461948115' status='passed' stop='1657461950260'>
+                            <name>I: login </name>
+                            <title>I: login </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657461948115' status='passed' stop='1657461950259'>
+                                    <name>I am on page "/simulation/tpsl/e2e-transaction.jsp"</name>
+                                    <title>I am on page "/simulation/tpsl/e2e-transaction.jsp"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1657461950260' status='passed' stop='1657461955264'>
+                            <name>I wait 5</name>
+                            <title>I wait 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1657461955264' status='passed' stop='1657461955431'>
+                    <name>When User should see insta staging cred web page and select Kotak Bank </name>
+                    <title>When User should see insta staging cred web page and select Kotak Bank </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461955264' status='passed' stop='1657461955431'>
+                            <name>flexMoney: verifyInstaCredFormDisplay </name>
+                            <title>flexMoney: verifyInstaCredFormDisplay </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657461955264' status='passed' stop='1657461955315'>
+                                    <name>I see element "//input[@id='CI']"</name>
+                                    <title>I see element "//input[@id='CI']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657461955315' status='passed' stop='1657461955384'>
+                                    <name>I click "//select[@id='bank_code_fm']"</name>
+                                    <title>I click "//select[@id='bank_code_fm']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657461955384' status='passed' stop='1657461955431'>
+                                    <name>I click "//tbody/tr[10]/td[2]/select[1]/option[4]"</name>
+                                    <title>I click "//tbody/tr[10]/td[2]/select[1]/option[4]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1657461955431' status='passed' stop='1657461960710'>
+                    <name>Then User click on continue button </name>
+                    <title>Then User click on continue button </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461955431' status='passed' stop='1657461960710'>
+                            <name>I click "//button[@id='continueBtn']"</name>
+                            <title>I click "//button[@id='continueBtn']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1657461960770' status='failed' stop='1657461960775'>
+            <name>Complete the transaction by valid card details and OTP</name>
+            <title>Complete the transaction by valid card details and OTP</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657461960774' status='failed' stop='1657461960775'>
+                    <name>When User adds a mobile number and clicks on Submit button and waits for OTP </name>
+                    <title>When User adds a mobile number and clicks on Submit button and waits for OTP </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461960774' status='failed' stop='1657461960775'>
+                            <name>I: addMobileNumber "9988998899"</name>
+                            <title>I: addMobileNumber "9988998899"</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657461960774' status='failed' stop='1657461960774'>
+                                    <name>I see element </name>
+                                    <title>I see element </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='e5bdbb7b-4ff7-40dc-8afd-ac4f78fe90f8-attachment.png' type='image/png' size='73459'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'type')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'type')
+                    at WebDriver._isShadowLocator (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:716:20)
+                    at WebDriver._locate (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:781:14)
+                    at WebDriver.seeElement (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:1371:28)
+                    at Step.run (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\step.js:122:47)
+                    at C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\actor.js:134:23</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1657461960920' status='failed' stop='1657461980989'>
+            <name>Verify Successful Transaction Payment Page</name>
+            <title>Verify Successful Transaction Payment Page</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657461960922' status='failed' stop='1657461980989'>
+                    <name>Then User needs to verify PID,AMT,STATUS is as expected in final invoice </name>
+                    <title>Then User needs to verify PID,AMT,STATUS is as expected in final invoice </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657461960922' status='failed' stop='1657461980989'>
+                            <name>flexMoney: verifyPaymentPage </name>
+                            <title>flexMoney: verifyPaymentPage </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657461960922' status='passed' stop='1657461965932'>
+                                    <name>I wait 5</name>
+                                    <title>I wait 5</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657461965933' status='failed' stop='1657461980989'>
+                                    <name>I see element "//h3[contains(text(),'PID : 0001234')]"</name>
+                                    <title>I see element "//h3[contains(text(),'PID : 0001234')]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='a0c1e1fb-6e48-4090-a828-7fb945a71398-attachment.png' type='image/png' size='73459'/>
+            </attachments>
+            <failure>
+                <message>Element "//h3[contains(text(),'PID : 0001234')]" was not found by text|CSS|XPath</message>
+                <stack-trace>Error: Element "//h3[contains(text(),'PID : 0001234')]" was not found by text|CSS|XPath
+                    at new ElementNotFound (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\errors\ElementNotFound.js:14:11)
+                    at assertElementExists (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:2827:11)
+                    at WebDriver.seeElement (C:\Users\YL72HP\OneDrive - ING\Desktop\FlexMoney Test\node_modules\codeceptjs\lib\helper\WebDriver.js:1372:5)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

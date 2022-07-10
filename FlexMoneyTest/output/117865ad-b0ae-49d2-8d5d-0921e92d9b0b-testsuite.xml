@@ -1,0 +1,270 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1657462232114' stop='1657462264482'>
+    <name>Flex Money</name>
+    <title>Flex Money</title>
+    <test-cases>
+        <test-case start='1657462242739' status='passed' stop='1657462249929'>
+            <name>Navigate to FlexMoney website</name>
+            <title>Navigate to FlexMoney website</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657462242745' status='passed' stop='1657462249426'>
+                    <name>Given User browse to flex money successfully </name>
+                    <title>Given User browse to flex money successfully </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462242745' status='passed' stop='1657462244418'>
+                            <name>I: login </name>
+                            <title>I: login </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657462242746' status='passed' stop='1657462244418'>
+                                    <name>I am on page "/simulation/tpsl/e2e-transaction.jsp"</name>
+                                    <title>I am on page "/simulation/tpsl/e2e-transaction.jsp"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1657462244418' status='passed' stop='1657462249426'>
+                            <name>I wait 5</name>
+                            <title>I wait 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1657462249426' status='passed' stop='1657462249582'>
+                    <name>When User should see insta staging cred web page and select Kotak Bank </name>
+                    <title>When User should see insta staging cred web page and select Kotak Bank </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462249426' status='passed' stop='1657462249582'>
+                            <name>flexMoney: verifyInstaCredFormDisplay </name>
+                            <title>flexMoney: verifyInstaCredFormDisplay </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657462249426' status='passed' stop='1657462249472'>
+                                    <name>I see element "//input[@id='CI']"</name>
+                                    <title>I see element "//input[@id='CI']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462249472' status='passed' stop='1657462249536'>
+                                    <name>I click "//select[@id='bank_code_fm']"</name>
+                                    <title>I click "//select[@id='bank_code_fm']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462249536' status='passed' stop='1657462249582'>
+                                    <name>I click "//tbody/tr[10]/td[2]/select[1]/option[4]"</name>
+                                    <title>I click "//tbody/tr[10]/td[2]/select[1]/option[4]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1657462249582' status='passed' stop='1657462249929'>
+                    <name>Then User click on continue button </name>
+                    <title>Then User click on continue button </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462249582' status='passed' stop='1657462249929'>
+                            <name>I click "//button[@id='continueBtn']"</name>
+                            <title>I click "//button[@id='continueBtn']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1657462249991' status='passed' stop='1657462259275'>
+            <name>Complete the transaction by valid card details and OTP</name>
+            <title>Complete the transaction by valid card details and OTP</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657462249995' status='passed' stop='1657462250303'>
+                    <name>When User adds a mobile number and clicks on Submit button and waits for OTP </name>
+                    <title>When User adds a mobile number and clicks on Submit button and waits for OTP </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462249995' status='passed' stop='1657462250225'>
+                            <name>I: addMobileNumber </name>
+                            <title>I: addMobileNumber </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657462249996' status='passed' stop='1657462250100'>
+                                    <name>I see element "//input[@id='paymentEnterMobile']"</name>
+                                    <title>I see element "//input[@id='paymentEnterMobile']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462250100' status='passed' stop='1657462250139'>
+                                    <name>I see element "//div[contains(text(),'You will get an OTP on this number')]"</name>
+                                    <title>I see element "//div[contains(text(),'You will get an OTP on this number')]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462250139' status='passed' stop='1657462250225'>
+                                    <name>I fill field "//input[@id='paymentEnterMobile']", "9988998899"</name>
+                                    <title>I fill field "//input[@id='paymentEnterMobile']", "9988998899"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1657462250225' status='passed' stop='1657462250303'>
+                            <name>I click "//button[@id='submitButton']"</name>
+                            <title>I click "//button[@id='submitButton']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1657462250303' status='passed' stop='1657462252773'>
+                    <name>Then User needs to select EMI Tenure with 9 months </name>
+                    <title>Then User needs to select EMI Tenure with 9 months </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462250303' status='passed' stop='1657462250700'>
+                            <name>I click "//input[@id='1001012']"</name>
+                            <title>I click "//input[@id='1001012']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1657462250700' status='passed' stop='1657462252709'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1657462252709' status='passed' stop='1657462252773'>
+                            <name>I click "//button[@id='submitButton']"</name>
+                            <title>I click "//button[@id='submitButton']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1657462252773' status='passed' stop='1657462254050'>
+                    <name>And User needs to verify the account by giving card details </name>
+                    <title>And User needs to verify the account by giving card details </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462252773' status='passed' stop='1657462254050'>
+                            <name>flexMoney: verifyTransactionComplete </name>
+                            <title>flexMoney: verifyTransactionComplete </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657462252773' status='passed' stop='1657462254002'>
+                                    <name>I fill field "//input[@id='accountNo']", "1234"</name>
+                                    <title>I fill field "//input[@id='accountNo']", "1234"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462254002' status='passed' stop='1657462254050'>
+                                    <name>I click "//button[@id='submitButton']"</name>
+                                    <title>I click "//button[@id='submitButton']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1657462254050' status='passed' stop='1657462259275'>
+                    <name>And User needs to add OTP </name>
+                    <title>And User needs to add OTP </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462254051' status='passed' stop='1657462259053'>
+                            <name>I wait 5</name>
+                            <title>I wait 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1657462259053' status='passed' stop='1657462259275'>
+                            <name>flexMoney: verifyOTP </name>
+                            <title>flexMoney: verifyOTP </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657462259053' status='passed' stop='1657462259151'>
+                                    <name>I fill field "//input[@id='otp']", "777777"</name>
+                                    <title>I fill field "//input[@id='otp']", "777777"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462259151' status='passed' stop='1657462259217'>
+                                    <name>I click "//input[@id='instacredTncCheckbox']"</name>
+                                    <title>I click "//input[@id='instacredTncCheckbox']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462259217' status='passed' stop='1657462259275'>
+                                    <name>I click "//button[@id='submitButton']"</name>
+                                    <title>I click "//button[@id='submitButton']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1657462259329' status='passed' stop='1657462264431'>
+            <name>Verify Successful Transaction Payment Page</name>
+            <title>Verify Successful Transaction Payment Page</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1657462259330' status='passed' stop='1657462264431'>
+                    <name>Then User needs to verify PID,AMT,STATUS is as expected in final invoice </name>
+                    <title>Then User needs to verify PID,AMT,STATUS is as expected in final invoice </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1657462259330' status='passed' stop='1657462264431'>
+                            <name>flexMoney: verifyPaymentPage </name>
+                            <title>flexMoney: verifyPaymentPage </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1657462259330' status='passed' stop='1657462264334'>
+                                    <name>I wait 5</name>
+                                    <title>I wait 5</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462264334' status='passed' stop='1657462264373'>
+                                    <name>I see element "//h3[contains(text(),'PID : 0001234')]"</name>
+                                    <title>I see element "//h3[contains(text(),'PID : 0001234')]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462264373' status='passed' stop='1657462264404'>
+                                    <name>I see element "//h3[contains(text(),'AMT : 10000')]"</name>
+                                    <title>I see element "//h3[contains(text(),'AMT : 10000')]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1657462264404' status='passed' stop='1657462264431'>
+                                    <name>I see element "//h3[contains(text(),'STATUS : SUCCESS')]"</name>
+                                    <title>I see element "//h3[contains(text(),'STATUS : SUCCESS')]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

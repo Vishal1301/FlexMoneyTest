@@ -1,0 +1,30 @@
+{
+  "name": "flexmoney-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "codecept.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.3.3",
+    "eslint": "^8.19.0",
+    "nightmare": "^2.8.0",
+    "nightmare-upload": "^0.1.1",
+    "webdriverio": "^6.12.1"
+  },
+  "dependencies": {
+    "@wdio/selenium-standalone-service": "^7.20.3",
+    "allure-commandline": "^2.18.1",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "codeceptjs-browserlogs-plugin": "^1.0.4",
+    "codeceptjs-chai": "^2.3.3",
+    "eslint-plugin-codeceptjs": "^1.3.0",
+    "mocha": "^10.0.0",
+    "querystring": "^0.2.1"
+  }
+}
